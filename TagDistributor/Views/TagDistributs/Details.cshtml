@@ -1,0 +1,51 @@
+﻿@model TagDistributor.Models.TagDistribut
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TagDistribut</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BeginID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BeginID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DistributDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DistributDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
